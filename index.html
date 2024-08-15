@@ -1,604 +1,928 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jack - personal portfolio</title>
 
-    <title>Cris Benge | Enthusiast of all-things data and machine learning</title>
-    <meta name="description" content="Cris Benge | Personal Portfolio">
-    <meta name="title" property="og:title" content="Cris Benge | Personal Portolio" />
-    <meta property="og:type" content="Website" />
-    <meta name="image" property="og:image" content="https://cbenge509.github.io/assets/img/portfolio_theme.png" />
-    <meta name="description" property="og:description" content="Cris Benge | Personal Portfolio" />
-    <meta name="author" content="Cris Benge" />
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-    <!-- Bootstrap & MDB -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- Fonts & Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
-
-    <!-- Code Syntax Highlighting -->
-    <link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
-
-    <!-- Styles -->
-    <link rel="shortcut icon" href="/assets/img/favicon.ico">
-    <link rel="stylesheet" href="/assets/css/main.css">
-
-    <link rel="canonical" href="/">
-
-    <!-- Theming-->
-    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=mpV2NaYPIPg_BiWcaMDLLnA5S8oVTDIPdyMJJytI489mC0sOtBvQLb7IoWALEl1U" charset="UTF-8"></script><script src="/assets/js/theme.js"></script>
-
-    <!-- Start of Google Analytics code ID -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162315295-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-162315295-1');
-    </script>
-    <!-- End of Google Analytics code ID -->
-
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
 </head>
 
-<body class="fixed-top-nav">
+<body id="top" class="dark_theme">
 
-    <!-- Header -->
-    <header>
+  <!-- 
+    - #HEADER
+  -->
 
-        <!-- Nav Bar -->
-        <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
-            <div class="container">
+  <header class="header" data-header>
+    <div class="container">
 
-                <!-- Social Icons -->
-                <div class="row ml-1 ml-sm-0">
-                    <span class="contact-icon text-center">
+      <h1 class="h1 logo">
+        <a href="#">Jack<span>.</span></a>
+      </h1>
 
-              <a href="https://github.com/cbenge509" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-              <!-- <a href="https://www.linkedin.com/in/crisbenge" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a> -->
-              <!--<a href="/assets/pdf/Cristopher Benge CV Public (2024).pdf" target="_blank" title="Resume"><i class="fab fa-readme"></i></a> -->
-            
-            </span>
-                </div>
+      <div class="navbar-actions">
 
-                <!-- Navbar Toogle -->
-                <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar top-bar"></span>
-            <span class="icon-bar middle-bar"></span>
-            <span class="icon-bar bottom-bar"></span>
-          </button>
+        <select name="language" id="lang">
+          <option value="en">En</option>
+          <option value="ar">Ar</option>
+        </select>
 
-                <div class="collapse navbar-collapse text-right" id="navbarNav">
-                    <ul class="navbar-nav ml-auto flex-nowrap">
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
 
-                        <!-- About -->
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/">about
-                  <span class="sr-only">(current)</span>
-                </a>
-                        </li>
+      </div>
 
-                        <!-- Projects -->
-                        <li class="nav-item ">
-                            <a class="nav-link" href="/projects/">portfolio</a>
-                        </li>
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
 
-                        <!-- Awards -->
-                        <li class="nav-item ">
-                            <a class="nav-link" href="/honors_awards/">awards</a>
-                        </li>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
 
-                        <!-- Skills -->
-                        <li class="nav-item ">
-                            <a class="nav-link" href="/skills/">skills</a>
-                        </li>
+          <li>
+            <a href="#home" class="navbar-link">Home.</a>
+          </li>
 
-                        <!-- Academics -->
-                        <li class="nav-item ">
-                            <a class="nav-link" href="/education/">academics</a>
-                        </li>
+          <li>
+            <a href="#about" class="navbar-link">About.</a>
+          </li>
 
-                        <div class="toggle-container">
-                            <a id="light-toggle">
-                                <i class="fas fa-moon"></i>
-                                <i class="fas fa-sun"></i>
-                            </a>
-                        </div>
+          <li>
+            <a href="#skills" class="navbar-link">Skills.</a>
+          </li>
 
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+          <li>
+            <a href="#portfolio" class="navbar-link">Portfolio.</a>
+          </li>
 
-    <!-- Content -->
-    <div class="container mt-5">
-        <div class="post">
+          <li>
+            <a href="#contact" class="navbar-link">Contact.</a>
+          </li>
 
-            <header class="post-header">
-                <h1 class="post-title">
-                    <span class="first-name">Cris</span> <span class="last-name">Benge</span>
-                </h1>
-                <p class="desc"></p>
-            </header>
+        </ul>
+      </nav>
 
-            <article>
-
-                <div class="profile float-left">
-                    <img class="img-fluid z-depth-1 rounded" src="/assets/img/cbenge.jpg">
-                </div>
-
-                <div class="clearfix main-text-content">
-
-                    <p>I am an AI researcher, data scientist, and solution architect interested in solving problems - and telling stories - with data.  I am a graduate of the <a href="https://datascience.berkeley.edu/" target="_blank" style="color: #2C6BAC; font-weight: bold">University of California, Berkeley</a>, 
-                        where I earned a Master of Information and Data Science, and a Master of Science in Computer Science with a specialization in Machine Learning from the School of Engineering and Applied Sciences at <a href="https://www.engineering.columbia.edu/departments/computer-science" target="_blank" style="color: #2C6BAC; font-weight: bold">Columbia University in the City of New York</a>.</p>
-
-                    <p>I have over 25 years of experience providing hands-on consultation and leadership in the Healthcare, Defense, and Federal Civilian sectors. I am passionate about data science, machine learning, cloud architecture, and database solution
-                        building - with a proven track record leading and delivering successful engagements for some of the largest and most complex data problem areas.</p>
-
-                </div>
-
-                <div class="projects">
-                    <h2>portfolio</h2>
-                    <div class="projects">
-
-                        <!-- row 1 -->
-                        <div class='row'>
-                            <div class="card-deck">
-
-                                <!-- PROJECT 1 -->
-                                <div class="card hoverable">
-
-                                    <a href="https://cbenge509.github.io/BERTVision/" target="_blank">
-                                        <img src="/assets/img/bertvision_project.png" alt="project thumbnail" class="card-img-top" height=225>
-
-                                        <div class="card-body">
-                                            <h2 class="card-title">BERTVision</span>
-                                            </h2>
-                                            <p class="card-text">High performance, parameter-efficient compression model architecture for BERT-based NLP tasks.</p>
-
-                                            <div class="row ml-1 mr-1 p-0"></div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <!-- PROJECT 2 -->
-                                <div class="card hoverable">
-
-                                    <a href="/projects/facialkeypoints/index.html" target="_blank">
-                                        <img src="/assets/img/keypoints_project.png" alt="project thumbnail" class="card-img-top" height=225>
-
-                                        <div class="card-body">
-                                            <h2 class="card-title">Facial Keypoints Detection</h2>
-                                            <p class="card-text">Computer vision, custom neural-network stacking, and a top-score for a Kaggle competition.</p>
-
-                                            <div class="row ml-1 mr-1 p-0"></div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <!-- PROJECT 3 -->
-                                <div class="card hoverable">
-
-                                    <a href="https://w241-final-project.azurewebsites.net/my-super-post.html" target="_blank">
-                                        <img src="/assets/img/grammar_project.png" alt="project thumbnail" class="card-img-top" height=225>
-
-                                        <div class="card-body">
-                                            <h2 class="card-title">Social Media Intelligence</h2>
-                                            <p class="card-text">A statistics field experiment and analysis of the impact to perceptions of intelligence due to grammar errors.</p>
-
-                                            <div class="row ml-1 mr-1 p-0"></div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- end of row -->
-
-                        <p></p>
-
-                        <!-- row 2 -->
-                        <div class='row'>
-                            <div class="card-deck">
-
-                                <!-- PROJECT 4 -->
-                                <div class="card hoverable">
-
-                                    <a href="/projects/arxiv/index.html" target="_blank">
-                                        <img src="/assets/img/arxiv_project.png" alt="project thumbnail" class="card-img-top" height=225>
-
-                                        <div class="card-body">
-                                            <h2 class="card-title">Data Visualization of ArXiV</h2>
-                                            <p class="card-text">A visual analysis of ArXiV AI/ML papers.</p>
-
-                                            <div class="row ml-1 mr-1 p-0"></div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <!-- PROJECT 5 -->
-                                <div class="card hoverable">
-
-                                    <a href="/projects/crime/index.html" target="_blank">
-                                        <img src="/assets/img/crime_project.png" alt="project thumbnail" class="card-img-top" height=225>
-
-                                        <div class="card-body">
-                                            <h2 class="card-title">Statistical Inference from Crime Data</h2>
-                                            <p class="card-text">A rigorous statistical analysis of North Carolina crima data with an aim for informing policy.</p>
-
-                                            <div class="row ml-1 mr-1 p-0"></div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <!-- PROJECT 6 -->
-                                <div class="card hoverable">
-
-                                    <a href="/projects/worldbank/index.html" target="_blank">
-                                        <img src="/assets/img/worldbank_project.png" alt="project thumbnail" class="card-img-top" height=225>
-
-                                        <div class="card-body">
-                                            <h2 class="card-title">World Bank Document Classification</h2>
-                                            <p class="card-text">A multi-language, multi-label, multi-class classification challenge.</p>
-
-                                            <div class="row ml-1 mr-1 p-0"></div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- end of row -->
-
-                        <p></p>
-
-                        <!-- row 3 -->
-                        <div class='row'>
-                            <div class="card-deck">
-
-                                <!-- PROJECT 7 -->
-                                <div class="card hoverable">
-
-                                    <a href="/projects/dsbowl/index.html" target="_blank">
-                                        <img src="/assets/img/dsbowl_project.png" alt="project thumbnail" class="card-img-top" height=225>
-
-                                        <div class="card-body">
-                                            <h2 class="card-title">2018 Kaggle Data Science Bowl</h2>
-                                            <p class="card-text">An instance segmentation challenge; spot the nuclei, speed time to cures!</p>
-
-                                            <div class="row ml-1 mr-1 p-0"></div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <!-- PROJECT 8 -->
-                                <div class="card hoverable">
-
-                                    <a href="/projects/futuresales/index.html" target="_blank">
-                                        <img src="/assets/img/futuresales_project.png" alt="project thumbnail" class="card-img-top" height=225>
-
-                                        <div class="card-body">
-                                            <h2 class="card-title">Predicting Future Sales</h2>
-                                            <p class="card-text">How to achieve top performance in a time-series regression challenge on Kaggle.</p>
-
-                                            <div class="row ml-1 mr-1 p-0"></div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <!-- PROJECT 9 -->
-                                <div class="card hoverable">
-
-                                    <a href="/projects/collegeincome/index.html" target="_blank">
-                                        <img src="/assets/img/collegeincome_project.png" alt="project thumbnail" class="card-img-top" height=225>
-
-                                        <div class="card-body">
-                                            <h2 class="card-title">College Outcomes Prediction</h2>
-                                            <p class="card-text">Understanding the factors that inform college graudate earnings.</p>
-
-                                            <div class="row ml-1 mr-1 p-0"></div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- end of row -->
-
-                        <p></p>
-
-                    </div>
-                </div>
-
-                <!-- OTHER INFORMATION -->
-
-                <div class="publications">
-
-                    <h2>other information</h2><br>
-
-                    <ol class="bibliography">
-
-                        <!-- AWARDS -->
-                        <li>
-                            <div class="row">
-                                <div class="col-sm-2 abbr">
-                                    <a href="/honors_awards/"><img src="/assets/img/awards.jpg" alt="project thumbnail" class="card-img-top" height=70 /></a>
-                                </div>
-
-                                <div id="tenney2020lit" class="col-sm-8">
-                                    <a href="/honors_awards/">
-                                        <div class="title">Honors & Awards</div>
-                                    </a>
-
-                                    <div class="author">
-                                        Honors and awards from my adventures through life and work that I am most proud of.
-                                    </div>
-
-                                    <!-- 
-                    <div class="periodical">
-                      <em>In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations, </em>2020
-                    </div>
-                    
-                    <div class="links">
-                      <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
-                      <a href="http://arxiv.org/abs/2008.05122" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
-                      <a href="https://www.aclweb.org/anthology/2020.emnlp-demos.15" class="btn btn-sm z-depth-0" role="button" target="_blank">EMNLP 2020</a>
-                      <a href="https://ai.googleblog.com/2020/11/the-language-interpretability-tool-lit.html" class="btn btn-sm z-depth-0" role="button" target="_blank">Blog</a>
-                      <a href="https://github.com/PAIR-code/lit" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
-                      <a href="/assets/pdf/lit-poster-emnlp-2020.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">Poster</a>
-                      <a href="https://pair-code.github.io/lit/" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
-                    </div>
-                    -->
-
-                                    <!-- Hidden abstract block -->
-                                    <!--
-                    <div class="abstract hidden">
-                      <p>We present the Language Interpretability Tool (LIT), an open-source platform for visualization and understanding of NLP models. We focus on core questions about model behavior: Why did my model make this prediction? When does it perform poorly? What happens under a controlled change in the input? LIT integrates local explanations, aggregate analysis, and counterfactual generation into a streamlined, browser-based interface to enable rapid exploration and error analysis. We include case studies for a diverse set of workflows, including exploring counterfactuals for sentiment analysis, measuring gender bias in coreference systems, and exploring local behavior in text generation. LIT supports a wide range of models—including classification, seq2seq, and structured prediction—and is highly extensible through a declarative, framework-agnostic API. LIT is under active development, with code and full documentation available at https://github.com/pair-code/lit.</p>
-                    </div>
-                    -->
-                                </div>
-                            </div>
-                        </li>
-                        <br>
-                        <!-- SKILLS & CERTIFICATIONS -->
-                        <li>
-                            <div class="row">
-                                <div class="col-sm-2 abbr">
-                                    <a href="/skills/index.html"><img src="/assets/img/skills.png" alt="project thumbnail" class="card-img-top" height=70 /></a>
-                                </div>
-
-                                <div id="tenney2020lit" class="col-sm-8">
-                                    <a href="/skills/index.html">
-                                        <div class="title">Skills & Certifications</div>
-                                    </a>
-
-                                    <div class="author">
-                                        Key competencies and an unreasonbly long list of professional certifications.
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <br>
-                        <!-- EDUCATION -->
-                        <li>
-                            <div class="row">
-                                <div class="col-sm-2 abbr">
-                                    <a href="/education/index.html"><img src="/assets/img/education2.png" alt="project thumbnail" class="card-img-top" height=70 /></a>
-                                </div>
-
-                                <div id="tenney2020lit" class="col-sm-8">
-                                    <a href="/education/index.html">
-                                        <div class="title">Education</div>
-                                    </a>
-
-                                    <div class="author">
-                                        Academic accomplishments & pursuits.<br><br>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- publication 1 -->
-                        <li>
-                            <div class="row">
-                                <div class="col-sm-2 abbr">
-                                    <!-- <abbr class="badge"><a href="https://www.aclweb.org/anthology/2020.emnlp-demos.15" target="_blank">EMNLP</a></abbr> -->
-                                    <abbr class="badge" style="text-align: center; display: block">Research</abbr>
-                                </div>
-
-                                <div id="tenney2020lit" class="col-sm-8">
-                                    <a href="https://cbenge509.github.io/BERTVision/" target="_blank">
-                                        <div class="title">BERTVision: A Parameter-Efficient Approach for Question Answering</div>
-                                    </a>
-
-                                    <div class="author">
-                                        Siduo Jiang, <em>Cris Benge</em>, William Casey King
-                                    </div>
-
-                                    <div class="periodical">
-                                        <em>Improving span annotation and classification task performance using parameter-efficient model architectures trained on BERT's hidden-state activations.</em> 2022
-                                    </div>
-
-                                    <div class="links">
-                                        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
-                                        <a href="https://arxiv.org/abs/2202.12210" class="btn btn-sm z-depth-0" role="button" target="_blank">Paper</a>
-                                        <a href="https://github.com/cbenge509/BERTVision" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
-                                        <a href="https://cbenge509.github.io/BERTVision/" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
-                                    </div>
-
-                                    <!-- Hidden abstract block -->
-                                    <div class="abstract hidden">
-                                        <p>We present a highly parameter-efficient approach for Question Answering (QA) that significantly reduces the need for extended BERT fine-tuning. Our method uses information from the hidden state activations of each
-                                            BERT transformer layer, which is discarded during typical BERT inference. Our best model achieves maximal BERT performance at a fraction of the training time and GPU/TPU expense. Performance is further improved
-                                            by ensembling our model with BERT’s predictions. Furthermore, we find that near optimal performance can be achieved for QA span annotation using less training data. Our experiments show that this approach works
-                                            well not only for span annotation, but also for classification, suggesting that it may be extensible to a wider range of tasks.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- publication 2 -->
-                        <li>
-                            <div class="row">
-                                <div class="col-sm-2 abbr">
-                                    <!-- <abbr class="badge"><a href="https://www.aclweb.org/anthology/2020.emnlp-demos.15" target="_blank">EMNLP</a></abbr> -->
-                                    <abbr class="badge" style="text-align: center; display: block">Research</abbr>
-                                </div>
-
-                                <div id="tenney2020lit" class="col-sm-8">
-                                    <a href="https://cbenge509.github.io/assets/pdf/High%20Performance%20Compression%20NLP.pdf" target="_blank">
-                                        <div class="title">A High Performance Compression Approach for Transformer-Based NLP Tasks</div>
-                                    </a>
-
-                                    <div class="author">
-                                        Siduo Jiang, <em>Cris Benge</em>, Andrew Fogarty, William Casey King, Alberto Todeschini, Hossein Vahabi
-                                    </div>
-
-                                    <div class="periodical">
-                                        <em>Improving performance of a wide variety of NLP tasks using parameter-efficient model architectures trained on BERT's hidden-state activations.</em> 2021
-                                    </div>
-
-                                    <div class="links">
-                                        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
-                                        <a href="https://cbenge509.github.io/assets/pdf/High%20Performance%20Compression%20NLP.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">Paper</a>
-                                        <a href="https://github.com/cbenge509/BERTVision" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
-                                        <a href="https://cbenge509.github.io/BERTVision/" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
-                                    </div>
-
-                                    <!-- Hidden abstract block -->
-                                    <div class="abstract hidden">
-                                        <p>We present a new BERT compression technique for NLP tasks that significantly reduces the number of parameters used by the model. Our compression method uses information from the hidden state activations of each
-                                            BERT transformer layer, which is discarded during typical BERT inference. We achieve same accuracy as BERT across a wide variety of GLUE benchmark tasks and SQuAD 2.0 with 209x times less parameters needed.
-                                            This suggests that the method may be extensible to a wider range of NLP tasks.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- publication 3 -->
-                        <li>
-                            <div class="row">
-                                <div class="col-sm-2 abbr">
-                                    <abbr class="badge" style="text-align: center; display: block">Research</abbr>
-                                </div>
-
-                                <div id="tenney2020lit" class="col-sm-8">
-                                    <a href="https://arxiv.org/abs/2307.00108" target="_blank">
-                                        <div class="title">Ticket-BERT: Labeling Incident Management Tickets with Language Models</div>
-                                    </a>
-
-                                    <div class="author">
-                                        Zhexiong Liu, <em>Cris Benge</em>, Siduo Jiang
-                                    </div>
-
-                                    <div class="periodical">
-                                        <em>Enabling automation of trouble ticket classification from a diverse set of machine and human-generated texts.</em> 2022
-                                    </div>
-
-                                    <div class="links">
-                                        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
-                                        <a href="https://arxiv.org/abs/2307.00108" class="btn btn-sm z-depth-0" role="button" target="_blank">Paper</a>
-                                    </div>
-
-                                    <div class="abstract hidden">
-                                        <p>Software and hardware incident management has gained notable attention in enterprise-level products, where efficient ticket resolution services are critically needed due to large-scale ticket resolution demands.
-                                            An essential aspect of prioritizing incident tickets for resolution is efficiently labeling tickets with fine-grained categories. This facilitates the accurate triage of incidents to responsible teams and ultimately
-                                            accelerates ticket resolution. However, ticket data is often complex and poses several unique challenges for modern machine learning methods: (1) tickets are created and updated either by machines with pre-defined
-                                            algorithms or by engineers with domain expertise that share different protocols, (2) tickets receive frequent revisions that update ticket status by modifying all or parts of ticket descriptions, and (3) ticket
-                                            labeling is time-sensitive and requires knowledge updates and new labels per the rapid software and hardware improvement lifecycle. To handle these issues, we introduce Ticket-BERT, which trains a simple yet
-                                            robust language model for labeling tickets using the proposed ticket datasets (i.e., D-Human, D-Machine, D-Mixture). Our extensive experiments demonstrate the superiority of Ticket-BERT over a diverse set of
-                                            baselines and state-of-the-art text classifiers in Microsoft Cognitive Services. We further evaluate Ticket-BERT using human input on a set of hard-to-identify tickets and achieve outstanding performance. We
-                                            deploy the proposed models in an active learning cycle that makes the model adapt to newly collected data and achieve greater accuracy with little annotating burden.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- publication 4 -->
-                        <li>
-                            <div class="row">
-                                <div class="col-sm-2 abbr">
-                                    <abbr class="badge" style="text-align: center; display: block">Research</abbr>
-                                </div>
-
-                                <div id="tenney2020lit" class="col-sm-8">
-                                    <a href="https://cbenge509.github.io/assets/pdf/STIM.pdf" target="_blank">
-                                        <div class="title">STIM: Predicting Memory Uncorrectable Errors with Spatio-Temporal Transformer</div>
-                                    </a>
-
-                                    <div class="author">
-                                        Zhexiong Liu, <em>Cris Benge</em>, Siduo Jiang
-                                    </div>
-
-                                    <div class="periodical">
-                                        <em>Predicting failure of memory due to uncorrectable errors using spatio-temporal transformers.</em> 2023
-                                    </div>
-
-                                    <div class="links">
-                                        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
-                                        <a href="https://cbenge509.github.io/assets/pdf/STIM.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">Paper</a>
-                                    </div>
-
-                                    <div class="abstract hidden">
-                                        <p>Memory Uncorrectable Errors (UEs) have been identified as a leading cause of server crashes in Microsoft Azure
-                                            datacenters. To mitigate this, leveraging machine learning methods to predict UEs before undertaking preventive
-                                            maintenance has become an effective measurement to decrease server downtime in large-scale clusters. However,
-                                            the prediction of UEs presents several challenges: (1) anomaly UEs are exceedingly rare in memory events. This
-                                            rarity renders machine learning methods highly vulnerable to imbalanced data, leading to high false positives
-                                            and low recall rates. (2) memory data is inherently noisy and heterogeneous because memory hardware comes
-                                            from a range of manufacturers (e.g., Samsung, SK-Hynix) and is deployed in diverse operational environments.
-                                            This necessitates the need for robust machine learning models. (3) Predicting UEs demands the handling of
-                                            intricate spatial and temporal variability in the memory framework, given the hardware degradation over its
-                                            lifecycle and the iterative introduction of new software and hardware configurations. To address these issues,
-                                            we proposed a Spatial-temporal Transformer in Memory (STIM) model that learns spatial and temporal features
-                                            with self-attention mechanisms across memory cells. Comparative evaluations on our developed Azure Memory
-                                            Error Dataset (AMED) reveal that our proposed STIM model outperforms existing machine learning methods
-                                            and strong baselines, which marks the significant application of Language Models (LMs) to address complex UE
-                                            prediction tasks.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ol>
-                </div>
-            </article>
-        </div>
     </div>
+  </header>
 
-    <!-- Footer -->
-    <footer class="fixed-bottom">
-        <div class="container mt-0">
-            &copy; Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Additional schema modifications contributed by <a href="https://iftenney.github.io/">others</a>.
-            Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+
+
+
+  <main>
+    <article class="container">
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+
+        <figure class="hero-banner">
+
+          <picture>
+            <source srcset="./assets/images/hero-banner.png" media="(min-width: 768px)">
+            <source srcset="./assets/images/hero-banner-md.png" media="(min-width: 500px)">
+            <img src="./assets/images/hero-banner-sm.png" alt="A man in a blue shirt with a happy expression"
+              class="w-100">
+          </picture>
+
+        </figure>
+
+        <div class="hero-content">
+
+          <h2 class="h2 hero-title">We Design & Build Creative Products</h2>
+
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+
         </div>
-    </footer>
+
+        <ul class="hero-social-list">
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+
+              <div class="tooltip">Facebook</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+
+              <div class="tooltip">Twitter</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+
+              <div class="tooltip">Linkedin</div>
+            </a>
+          </li>
+
+        </ul>
+
+        <a href="#stats" class="scroll-down">Scroll</a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="stats" id="stats">
+        <ul class="stats-list">
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-1.png" alt="Badge icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                12+ <strong>Years of Experience</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                230+ <strong>Completed Projects</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                95+ <strong>Happy Clients</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+
+        <figure class="about-banner">
+          <img src="./assets/images/about-banner.png" alt="A man in a alice blue shirt with a thinking expression"
+            class="w-100">
+        </figure>
+
+        <div class="about-content section-content">
+
+          <p class="section-subtitle">About me</p>
+
+          <h2 class="h3 section-title">Need a Creative Product? I can Help You!</h2>
+
+          <p class="section-text">
+            Hi! I’m Jack Reacher, and I’m a developer who has passion for building clean web applications with intuitive
+            functionalities. I enjoy the process of turning ideas into reality using creative solutions. I’m always
+            curious about
+            learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have
+            worked with
+            creative teams, which involves daily stand-ups and communications, source control, and project management.
+          </p>
+
+          <div class="btn-group">
+            <button class="btn btn-secondary">Hire me</button>
+
+            <button class="btn btn-primary">Download cv</button>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="skills" id="skills">
+
+        <div class="skills-content section-content">
+
+          <p class="section-subtitle">My skills</p>
+
+          <h2 class="h3 section-title">What My Programming Skills Included?</h2>
+
+          <p class="section-text">
+            I develop simple, intuitive and responsive user interface that helps users get things done with less effort
+            and time
+            with those technologies.
+          </p>
+
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+            <button class="toggle-btn" data-toggle-btn>Tools</button>
+          </div>
+
+        </div>
+
+        <div class="skills-box" data-skills-box>
+
+          <ul class="skills-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">HTML5</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/html5.png" alt="HTML5 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">CSS3</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/css3.png" alt="CSS3 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">JavaScript</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/javascript.png" alt="JavaScript logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">TypeScript</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/typescript.png" alt="TypeScript logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">jQuery</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/jquery.png" alt="jQuery logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Bootstrap</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/bootstrap.png" alt="Bootstrap logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Angular</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/angular.png" alt="Angular logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">React</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/react.png" alt="React logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Vue</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/vue.png" alt="Vue logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Firebase</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/firebase.png" alt="Firebase logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">PugJs</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/pugjs.png" alt="PugJs logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">SASS</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/sass.png" alt="SASS logo">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <ul class="tools-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Ajax</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/ajax.png" alt="Ajax logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Gulp</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/gulp.png" alt="Gulp logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Webpack</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/webpack.png" alt="Webpack logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Git</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/git.png" alt="Git logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Npm</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/npm.png" alt="Npm logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Command Line</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/command.png" alt="Command Line logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">VS Code</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/vs-code.png" alt="VS Code logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Trello</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/trello.png" alt="Trello logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">ClickUp</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/clickup.png" alt="ClickUp logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Slack</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/slack.png" alt="Slack logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Photoshop</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/photoshop.png" alt="Photoshop logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Adobe XD</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/adobe-xd.png" alt="Adobe XD logo">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROJECTS
+      -->
+
+      <section class="project" id="portfolio">
+
+        <ul class="project-list">
+
+          <li>
+            <div class="project-content section-content">
+
+              <p class="section-subtitle">My Works</p>
+
+              <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
+
+              <p class="section-text">
+                We develop the best quality website that serves for the long-term. Well-documented, clean, easy and
+                elegant interface
+                helps any non-technical clients.
+              </p>
+
+            </div>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-1.png" class="w-100" alt="A macintosh on a yellow background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 01</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-2.png" class="w-100" alt="On a Blue background, a Wacom and a mouse.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 02</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-3.png" class="w-100"
+                  alt="A Cassette tape on a mellow apricot background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 03</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-4.png" class="w-100"
+                  alt="Blue digital watch on a dark liver background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 04</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-5.png" class="w-100"
+                  alt="On a dark liver background, Airport luggage car carrying a luggage.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 05</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-6.png" class="w-100"
+                  alt="On a yellow background, a digital watch and a glass.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 06</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-7.png" class="w-100"
+                  alt="A fujifilm instant camera on a dark electric blue background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 07</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <button class="load-more">Load more work</button>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h3 section-title">Have You Any Project? Please Drop a Message</h2>
+
+          <p class="section-text">
+            Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Address:</h3>
+
+                <address class="contact-info">
+                  941 Saqrqorish Road, alandalos, grnata, wa 47122-4194
+                </address>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Phone:</h3>
+
+                <a href="tel:01234567789" class="contact-info">(01) 234 567 789</a>
+
+                <a href="tel:09765432200" class="contact-info">(09) 765 432 200</a>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+
+                <a href="mailto:info@jack.com" class="contact-info">info@jack.com</a>
+
+                <a href="mailto:support@jack.com" class="contact-info">support@jack.com</a>
+              </div>
+
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Facebook</div>
+
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Twitter</div>
+
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Linkedin</div>
+
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Youtube</div>
+
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <form action="" class="contact-form">
+
+          <div class="form-wrapper">
+
+            <label for="name" class="form-label">Name</label>
+
+            <div class="input-wrapper">
+
+              <input type="text" name="name" id="name" required placeholder="e.g John Doe" class="input-field">
+
+              <ion-icon name="person-circle"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="email" class="form-label">Email</label>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email" id="email" required placeholder="e.g johndoe@mail.com"
+                class="input-field">
+
+              <ion-icon name="mail"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="phone" class="form-label">Phone</label>
+
+            <div class="input-wrapper">
+
+              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+
+              <ion-icon name="call"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="message" class="form-label">Message</label>
+
+            <div class="input-wrapper">
+
+              <textarea name="message" id="message" required placeholder="Write message..."
+                class="input-field"></textarea>
+
+              <ion-icon name="chatbubbles"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+
+        </form>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+          Jack<span>.</span>
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2022 <a href="#">codewithsadee</a>. All rights reserved
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
-
-<!-- jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-
-<!-- Bootsrap & MDB scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
-
-<!-- Load Common JS -->
-<script src="/assets/js/common.js"></script>
-
-<!-- Load DarkMode JS -->
-<script src="/assets/js/dark_mode.js"></script>
 
 </html>

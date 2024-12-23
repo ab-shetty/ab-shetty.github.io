@@ -429,7 +429,7 @@ body.active { overflow: hidden; }
   margin-inline: auto;
   color: var(--color-primary);
   font-family: var(--ff-poppins);
-  font-size: var(--fs-1);
+  font-size: 1.5rem!important;
   padding: 10px;
   transform: translateY(50px);
   transition: 0.75s cubic-bezier(0.68, -0.55, 0.27, 2);
@@ -794,8 +794,8 @@ main { overflow-x: hidden; }
   position: relative;
   background: var(--color-primary);
   color: var(--bg-primary);
-  width: 75px;
-  height: 75px;
+  width: 55px;
+  height: 55px;
   display: grid;
   place-items: center;
   border-radius: 50%;
@@ -850,12 +850,12 @@ main { overflow-x: hidden; }
 }
 
 .contact-social-link ion-icon {
-  font-size: 2.5rem; /* Adjust the size as needed */
+  font-size: 2rem; /* Adjust the size as needed */
   transition: var(--transition-1); /* Keeps the transition smooth */
 }
 
 .contact-social-link:is(:hover, :focus) ion-icon {
-  font-size: 3rem; /* Slightly larger on hover */
+  font-size: 2.5rem; /* Slightly larger on hover */
 }
 
 textarea.input-field {

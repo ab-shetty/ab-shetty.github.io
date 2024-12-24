@@ -794,13 +794,13 @@ main { overflow-x: hidden; }
   position: relative;
   background: var(--color-primary);
   color: var(--bg-primary);
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   display: grid;
   place-items: center;
   border-radius: 50%;
   transition: var(--transition-1);
-  margin-top: -30px;
+  margin-top: -35px;
 }
 
 .contact-social-link:is(:hover, :focus) {
